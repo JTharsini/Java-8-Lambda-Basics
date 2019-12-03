@@ -1,5 +1,6 @@
 package io.javabrains;
 
+@FunctionalInterface
 public interface Greeting {
 	void perform();
 	// if I add another method here int add(int a, int b)
