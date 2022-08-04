@@ -73,4 +73,6 @@ Even though it is optional. It's better to add to avoid confusion.
 Greeting g = ()-> SoS("Hello World!!");
 Greeting g = new HelloWorldGreeting();
 
-Lambda behaves just like implementation of the interface
+Lambda behaves like implementation of the interface, by just implementing the single method that interface has. Interface implementation on the otherhand implements the whole interface
+
+
