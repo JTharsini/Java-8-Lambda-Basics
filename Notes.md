@@ -1,6 +1,10 @@
+lambda enables functional programming
+
 -functional programming
 -less number of lines
 -readable and maintainable code
+-better APIs & libraries
+-enable support for parallel processing
 
 problem in OOP:
 -everything is an object
