@@ -9,6 +9,8 @@ lambda enables functional programming
 problem in OOP:
 -everything is an object
 -all code blocks are associated with classes and objects
+-when need to pass a behavior, need to pass an object which have a behavior
+-Lambda resolves this problem. actions passed as Lamda doesn't belongs to any classes.
 
 functions as values:
 Inline value:- Eg: String name = "foo", double pi = 3.14
@@ -42,6 +44,9 @@ In lamda, java compiler is doing type inference: Type of arguments and return ty
 
 greetingFunction = () -> System.out.println("Hello world");
 -Declaring it as variable
+-Need an interface which is having single method with signature of the function to write Lambda
+-Assign the Lambda to the interface
+
 1. Able to  pass as argument Eg: greet(greetingFunction);
 
 public void greet(------)
