@@ -68,3 +68,9 @@ why "abstract" is mentioned : because, from java8 interface can have default imp
 We can define now it as a functional interface. Later if someone add method, can't be used as functional interface.
 So in java8 there is a way to explicitly tell it's a functional interface. ==> @FunctionalInterface
 Even though it is optional. It's better to add to avoid confusion.
+
+-Lambda vs Interface implementation: 
+Greeting g = ()-> SoS("Hello World!!");
+Greeting g = new HelloWorldGreeting();
+
+Lambda behaves just like implementation of the interface
