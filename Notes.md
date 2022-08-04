@@ -1,6 +1,6 @@
 lambda enables functional programming
 
--functional programming
+-functional programming (function or behaviour as argument)
 -less number of lines
 -readable and maintainable code
 -better APIs & libraries
