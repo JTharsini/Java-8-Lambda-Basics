@@ -73,7 +73,7 @@ Even though it is optional. It's better to add to avoid confusion.
 Greeting g = ()-> SoS("Hello World!!");
 Greeting g = new HelloWorldGreeting();
 
--Lambda behaves like implementation of the interface, by just implementing the single method that interface has. Interface implementation on the otherhand implements the whole interface
+-Lambda behaves like implementation of the interface, by just implementing the single method that interface has(without creating objects for that). Interface implementation on the otherhand implements the whole interface
 -Lambda is kind of shortcut to create annonymous inner class with single method
 
-
+-Creating interfaces is extra work. There are common type of functionalities needed to be implemented. java.util.function package contains such functional interfaces
