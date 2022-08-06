@@ -109,4 +109,12 @@ Greeting g = new HelloWorldGreeting();
       }
     });
 -use wrapper Lambda in another Lambda to handle exception
+Method reference:
+Static method:
+-Thread t = new Thread(() -> printMessage()); can be shortened as Thread t2 = new Thread(MethodReferenceExample1::printMessage);
+When no argument and no parameters or when function call on passing argument ==> Method reference is applicable
+p -> method(p)
+() -> method()
+Instance method:
+-behaveConditionally(people, p -> true, p -> System.out.println(p)); ==> behaveConditionally(people, p -> true, System.out::println);
 -
