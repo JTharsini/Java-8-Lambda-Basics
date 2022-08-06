@@ -2,7 +2,7 @@ lambda enables functional programming
 
 -functional programming (function or behaviour as argument)
 -less number of lines
--readable and maintainable code
+-readable, concise maintainable code
 -better APIs & libraries
 -enable support for parallel processing
 
@@ -125,3 +125,14 @@ the iteration
 -forEach: every collection has method forEach which has an argument : Consumer
 -For multi-processor computor: forEach is easy to parallelize for runtime
 -when we control: it's sequential
+
+-Streams: A sequence of elements supporting sequential and parallel aggregate operations
+-Multiple operations in one loop : pipelining (each operation have chance to modify the stream)
+-Streams help to build assembly line (pipelining)
+-In Java8 every collection comes with Java streams
+-Stream has a source (collection in Java case), operations to be done in that stream and end operation (terminal operation) 
+(on which stream ends-can't do any other operations further)
+-Lambda expression enables parallel processing through streams
+- sequential Stream : stream
+  parallel stream : parallelStream
+-
