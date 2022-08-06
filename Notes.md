@@ -77,3 +77,36 @@ Greeting g = new HelloWorldGreeting();
 -Lambda is kind of shortcut to create annonymous inner class with single method
 
 -Creating interfaces is extra work. There are common type of functionalities needed to be implemented. java.util.function package contains such functional interfaces
+-When accepting an object and returning boolean ==> Predicate
+-Supplier : just return value
+-Function : accept a type and return another type
+-method which accepts Lambda handling the exception:
+  private static void process(int[] someNumbers, int key, BiConsumer<Integer, Integer> biConsumer)
+  {
+    for (int i : someNumbers)
+    {
+      try
+      {
+        biConsumer.accept(i, key);
+      }
+      // but you don't know what is the behavior going to be passed.
+      // then ArithmeticException might not be applicable (for example addition is the behaviour)
+      catch (ArithmeticException e)
+      {
+        
+      }
+    }
+  }
+-Lambda handling the exception:
+ process(someNumbers, key, (v, k) -> {
+      try
+      {
+        System.out.println(v / k);
+      }
+      catch (ArithmeticException e)
+      {
+        System.out.println("An ArithmeticException happened");
+      }
+    });
+-use wrapper Lambda in another Lambda to handle exception
+-
