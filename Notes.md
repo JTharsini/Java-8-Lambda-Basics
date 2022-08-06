@@ -117,4 +117,11 @@ p -> method(p)
 () -> method()
 Instance method:
 -behaveConditionally(people, p -> true, p -> System.out.println(p)); ==> behaveConditionally(people, p -> true, System.out::println);
--
+
+-Java8 introduces new way to iterate over collection : stream
+-for loop and for in loops are called external iterators: writing code to perform iteration imperatively, we are writing code to control
+the iteration
+-In Java8 : internal iteration: giving control to runtime
+-forEach: every collection has method forEach which has an argument : Consumer
+-For multi-processor computor: forEach is easy to parallelize for runtime
+-when we control: it's sequential
